@@ -28,7 +28,6 @@ Tecnologías utilizadas:
 - Python
 - Flask
 - Flasgger (Swagger/OpenAPI)
-- Pytest
 
 ---
 
