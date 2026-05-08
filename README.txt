@@ -51,6 +51,6 @@ Instalar los requirements con pip install -r requirements.txt
 
 Ejecutar el servidor con python aplicacion.py
 
-Abrir el navegador y copiar la direccion brindada
+Abrir el navegador y pegar la direccion brindada
 
 Para swagger usar http://127.0.0.1:5000/apidocs
