@@ -73,7 +73,15 @@ def agregar_al_carrito():
     ---
     parameters:
       - in: body
-        name: producto
+        name: body
+        required: true
+        schema:
+          type: object
+          properties:
+            productoId:
+              type: integer
+            cantidad:
+              type: integer
 
     responses:
       200:
@@ -107,14 +115,24 @@ def agregar_al_carrito():
         "mensaje": "Producto agregado al carrito"
     })
 
+
 @app.route('/carrito/<int:producto_id>', methods=['DELETE'])
 def eliminar_del_carrito(producto_id):
     """
     Eliminar cantidad de producto del carrito
     ---
     parameters:
+      - name: producto_id
+        in: path
+        type: integer
+
       - in: body
-        name: producto
+        name: body
+        schema:
+          type: object
+          properties:
+            cantidad:
+              type: integer
 
     responses:
       200:
@@ -144,6 +162,7 @@ def eliminar_del_carrito(producto_id):
     return jsonify({
         "mensaje": "Cantidad eliminada correctamente"
     })
+
 
 @app.route('/carrito/total', methods=['GET'])
 def calcular_total():
