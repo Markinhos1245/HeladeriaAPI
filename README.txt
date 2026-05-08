@@ -34,5 +34,23 @@ Tecnologías utilizadas:
 
 Instalación:
 
-```bash
+
 pip install -r requirements.txt
+
+---
+
+Uso:
+
+Ejecutar terminal y cargar la carpeta del proyecto
+
+Crear entorno virtual con python -m venv venv
+
+Ejecutar scripts del entorno virtual con venv\Scripts\activate
+
+Instalar los requirements con pip install -r requirements.txt
+
+Ejecutar el servidor con python aplicacion.py
+
+Abrir el navegador y copiar la direccion brindada
+
+Para swagger usar http://127.0.0.1:5000/apidocs
